@@ -1,0 +1,596 @@
+[2024-01-01T15:42:49.780+0100] {processor.py:161} INFO - Started process (PID=7997) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:42:49.780+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T15:42:49.781+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:42:49.780+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:42:49.794+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:42:49.790+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T15:42:49.794+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:42:49.807+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.029 seconds
+[2024-01-01T15:43:37.763+0100] {processor.py:161} INFO - Started process (PID=8066) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:43:37.773+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T15:43:37.774+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:43:37.773+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:43:37.783+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:43:37.783+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T15:43:37.784+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:43:37.800+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.039 seconds
+[2024-01-01T15:44:34.143+0100] {processor.py:161} INFO - Started process (PID=8278) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:44:34.144+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T15:44:34.145+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:44:34.145+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:44:34.164+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:44:34.163+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T15:44:34.165+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:44:34.182+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.040 seconds
+[2024-01-01T15:46:10.491+0100] {processor.py:161} INFO - Started process (PID=8717) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:46:10.496+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T15:46:10.507+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:46:10.498+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:46:10.780+0100] {logging_mixin.py:188} INFO - [2024-01-01T15:46:10.738+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T15:46:10.782+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T15:46:10.946+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.470 seconds
+[2024-01-01T16:09:26.139+0100] {processor.py:161} INFO - Started process (PID=4155) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:09:26.149+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:09:26.150+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:09:26.150+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:09:26.163+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:09:26.161+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:09:26.163+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:09:26.176+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.038 seconds
+[2024-01-01T16:10:18.253+0100] {processor.py:161} INFO - Started process (PID=4432) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:10:18.255+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:10:18.256+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:10:18.255+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:10:18.272+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:10:18.269+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:10:18.273+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:10:18.292+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.041 seconds
+[2024-01-01T16:11:05.588+0100] {processor.py:161} INFO - Started process (PID=4505) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:05.598+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:11:05.599+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:11:05.598+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:05.612+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:11:05.610+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:11:05.612+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:05.627+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.043 seconds
+[2024-01-01T16:11:58.275+0100] {processor.py:161} INFO - Started process (PID=4576) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:58.285+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:11:58.286+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:11:58.285+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:58.297+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:11:58.296+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:11:58.297+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:11:58.314+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.042 seconds
+[2024-01-01T16:12:54.108+0100] {processor.py:161} INFO - Started process (PID=4782) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:12:54.120+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:12:54.123+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:12:54.121+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:12:54.160+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:12:54.158+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:12:54.160+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:12:54.177+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.076 seconds
+[2024-01-01T16:13:50.585+0100] {processor.py:161} INFO - Started process (PID=4852) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:13:50.586+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:13:50.587+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:13:50.587+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:13:50.604+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:13:50.603+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:13:50.605+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:13:50.632+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.052 seconds
+[2024-01-01T16:14:43.647+0100] {processor.py:161} INFO - Started process (PID=4972) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:14:43.657+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:14:43.658+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:14:43.657+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:14:43.675+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:14:43.674+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:14:43.676+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:14:43.690+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.047 seconds
+[2024-01-01T16:15:34.794+0100] {processor.py:161} INFO - Started process (PID=5054) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:15:34.795+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:15:34.796+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:15:34.795+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:15:34.808+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:15:34.807+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:15:34.809+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:15:34.833+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.042 seconds
+[2024-01-01T16:16:30.342+0100] {processor.py:161} INFO - Started process (PID=5204) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:16:30.353+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:16:30.354+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:16:30.354+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:16:30.372+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:16:30.370+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:16:30.372+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:16:30.387+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.050 seconds
+[2024-01-01T16:17:25.066+0100] {processor.py:161} INFO - Started process (PID=5273) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:17:25.076+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:17:25.077+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:17:25.076+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:17:25.088+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:17:25.087+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:17:25.088+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:17:25.104+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.040 seconds
+[2024-01-01T16:18:18.590+0100] {processor.py:161} INFO - Started process (PID=5340) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:18:18.600+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:18:18.600+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:18:18.600+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:18:18.611+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:18:18.610+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py", line 125, in <module>
+    random_choice_venv = branching_virtualenv(choices=options)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 367, in __call__
+    op = self.operator_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/python.py", line 52, in __init__
+    super().__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 234, in __init__
+    super().__init__(task_id=task_id, **kwargs_to_upstream, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 581, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-01-01T16:18:18.611+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:18:18.622+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.035 seconds
+[2024-01-01T16:19:11.908+0100] {processor.py:161} INFO - Started process (PID=5453) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:19:11.918+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:19:11.919+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:11.919+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:19:11.935+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:19:12.007+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.007+0100] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_python_operator_decorator
+[2024-01-01T16:19:12.015+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.015+0100] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_python_operator_decorator
+[2024-01-01T16:19:12.021+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.020+0100] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_python_operator_decorator
+[2024-01-01T16:19:12.021+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.021+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:19:12.028+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.028+0100] {dag.py:3055} INFO - Creating ORM DAG for example_branch_python_operator_decorator
+[2024-01-01T16:19:12.034+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:19:12.033+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:19:12.052+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.147 seconds
+[2024-01-01T16:20:13.683+0100] {processor.py:161} INFO - Started process (PID=5582) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:20:13.685+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:20:13.686+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:20:13.686+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:20:13.706+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:20:13.776+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:20:13.776+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:20:13.790+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:20:13.790+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:20:13.814+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.134 seconds
+[2024-01-01T16:21:06.123+0100] {processor.py:161} INFO - Started process (PID=5822) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:21:06.125+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:21:06.125+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:21:06.125+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:21:06.137+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:21:06.150+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:21:06.150+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:21:06.163+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:21:06.163+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:21:06.177+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.056 seconds
+[2024-01-01T16:23:27.759+0100] {processor.py:161} INFO - Started process (PID=5973) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:23:27.763+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:23:27.765+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:23:27.764+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:23:27.801+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:23:27.876+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:23:27.876+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:23:27.894+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:23:27.894+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:23:27.912+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.162 seconds
+[2024-01-01T16:24:28.044+0100] {processor.py:161} INFO - Started process (PID=6042) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:24:28.055+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:24:28.056+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:24:28.055+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:24:28.073+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:24:28.087+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:24:28.087+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:24:28.099+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:24:28.099+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:24:28.115+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.075 seconds
+[2024-01-01T16:25:12.772+0100] {processor.py:161} INFO - Started process (PID=6228) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:25:12.784+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:25:12.786+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:25:12.785+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:25:12.819+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:25:12.836+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:25:12.836+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:25:12.849+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:25:12.849+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:25:12.865+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.101 seconds
+[2024-01-01T16:26:06.246+0100] {processor.py:161} INFO - Started process (PID=6351) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:26:06.256+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:26:06.257+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:26:06.256+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:26:06.268+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:26:06.281+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:26:06.281+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:26:06.293+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:26:06.293+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:26:06.314+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.069 seconds
+[2024-01-01T16:27:02.279+0100] {processor.py:161} INFO - Started process (PID=6531) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:02.289+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:27:02.289+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:02.289+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:02.300+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:02.313+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:02.313+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:27:02.325+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:02.325+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:27:02.348+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.072 seconds
+[2024-01-01T16:27:50.352+0100] {processor.py:161} INFO - Started process (PID=6619) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:50.355+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:27:50.357+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:50.356+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:50.387+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:27:50.405+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:50.405+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:27:50.418+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:27:50.417+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:27:50.442+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.097 seconds
+[2024-01-01T16:28:43.787+0100] {processor.py:161} INFO - Started process (PID=6782) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:28:43.797+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:28:43.798+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:28:43.798+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:28:43.810+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:28:43.824+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:28:43.824+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:28:43.837+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:28:43.837+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:28:43.865+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.081 seconds
+[2024-01-01T16:29:37.406+0100] {processor.py:161} INFO - Started process (PID=6886) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:29:37.408+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:29:37.409+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:29:37.408+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:29:37.434+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:29:37.453+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:29:37.452+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:29:37.465+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:29:37.465+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:29:37.492+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.090 seconds
+[2024-01-01T16:30:29.765+0100] {processor.py:161} INFO - Started process (PID=7004) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:30:29.766+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:30:29.767+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:30:29.767+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:30:29.785+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:30:29.803+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:30:29.803+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:30:29.817+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:30:29.817+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:30:29.845+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.082 seconds
+[2024-01-01T16:31:24.236+0100] {processor.py:161} INFO - Started process (PID=7093) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:31:24.246+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:31:24.247+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:31:24.247+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:31:24.267+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:31:24.285+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:31:24.285+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:31:24.300+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:31:24.300+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:31:24.318+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.084 seconds
+[2024-01-01T16:32:17.145+0100] {processor.py:161} INFO - Started process (PID=7223) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:32:17.155+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:32:17.156+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:32:17.155+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:32:17.188+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:32:17.204+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:32:17.203+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:32:17.219+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:32:17.219+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:32:17.244+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.100 seconds
+[2024-01-01T16:33:09.346+0100] {processor.py:161} INFO - Started process (PID=7385) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:33:09.358+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:33:09.360+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:33:09.359+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:33:09.381+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:33:09.402+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:33:09.402+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:33:09.419+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:33:09.419+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:33:09.436+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.097 seconds
+[2024-01-01T16:34:08.895+0100] {processor.py:161} INFO - Started process (PID=7522) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:34:08.896+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2024-01-01T16:34:08.896+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:34:08.896+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:34:08.915+0100] {processor.py:840} INFO - DAG(s) 'example_branch_python_operator_decorator' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2024-01-01T16:34:08.932+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:34:08.932+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-01T16:34:08.948+0100] {logging_mixin.py:188} INFO - [2024-01-01T16:34:08.948+0100] {dag.py:3820} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2023-12-31T00:00:00+00:00, run_after=2024-01-01T00:00:00+00:00
+[2024-01-01T16:34:08.983+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.091 seconds

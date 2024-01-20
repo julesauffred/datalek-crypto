@@ -1,0 +1,28 @@
+2024-01-18 16:37:48,648 INFO - Task context logging is enabled
+2024-01-18 16:37:48,698 INFO - Loaded executor: SequentialExecutor
+2024-01-18 16:37:49,041 INFO - Starting the scheduler
+2024-01-18 16:37:49,043 INFO - Processing each file at most -1 times
+2024-01-18 16:37:49,090 INFO - Launched DagFileProcessorManager with pid: 17488
+2024-01-18 16:37:49,095 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 16:37:49,123 INFO - Configured default timezone Timezone('UTC')
+2024-01-18 16:42:49,654 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:05:44,678 INFO - Task context logging is enabled
+2024-01-18 17:05:44,695 INFO - Loaded executor: SequentialExecutor
+2024-01-18 17:05:44,752 INFO - Starting the scheduler
+2024-01-18 17:05:44,753 INFO - Processing each file at most -1 times
+2024-01-18 17:05:44,762 INFO - Launched DagFileProcessorManager with pid: 5252
+2024-01-18 17:05:44,765 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:05:44,769 INFO - Configured default timezone Timezone('UTC')
+2024-01-18 17:10:45,600 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:15:47,565 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:20:47,836 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:25:47,999 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:30:48,142 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:35:48,381 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:40:48,672 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:45:49,712 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:50:50,585 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 17:55:51,846 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 18:00:53,754 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 18:05:53,972 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-01-18 18:10:54,505 INFO - Adopting or resetting orphaned tasks for active dag runs

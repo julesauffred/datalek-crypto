@@ -1,0 +1,22 @@
+[2024-01-18T19:17:49.108+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:11:55.593625+00:00 [queued]>
+[2024-01-18T19:17:49.123+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:11:55.593625+00:00 [queued]>
+[2024-01-18T19:17:49.123+0100] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2024-01-18T19:17:49.184+0100] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): extract_store_data> on 2024-01-18 18:11:55.593625+00:00
+[2024-01-18T19:17:49.276+0100] {standard_task_runner.py:60} INFO - Started process 26804 to run task
+[2024-01-18T19:17:49.282+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'big_data_project_dag', 'extract_store_data', 'manual__2024-01-18T18:11:55.593625+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/CoinMarketCap.py', '--cfg-path', '/tmp/tmpqfc6oj4e']
+[2024-01-18T19:17:49.285+0100] {standard_task_runner.py:88} INFO - Job 65: Subtask extract_store_data
+[2024-01-18T19:17:49.635+0100] {task_command.py:423} INFO - Running <TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:11:55.593625+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-18T19:17:49.802+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='jules' AIRFLOW_CTX_DAG_ID='big_data_project_dag' AIRFLOW_CTX_TASK_ID='extract_store_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-18T18:11:55.593625+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-18T18:11:55.593625+00:00'
+[2024-01-18T19:17:49.806+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: extract_and_store_data() takes 0 positional arguments but 1 was given
+[2024-01-18T19:17:49.811+0100] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=big_data_project_dag, task_id=extract_store_data, execution_date=20240118T181155, start_date=20240118T181749, end_date=20240118T181749
+[2024-01-18T19:17:49.932+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 65 for task extract_store_data (extract_and_store_data() takes 0 positional arguments but 1 was given; 26804)
+[2024-01-18T19:17:49.953+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-18T19:17:50.040+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

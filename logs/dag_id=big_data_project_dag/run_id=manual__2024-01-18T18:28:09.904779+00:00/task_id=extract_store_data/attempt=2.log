@@ -1,0 +1,43 @@
+[2024-01-18T19:33:54.645+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:28:09.904779+00:00 [queued]>
+[2024-01-18T19:33:54.661+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:28:09.904779+00:00 [queued]>
+[2024-01-18T19:33:54.662+0100] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2024-01-18T19:33:54.830+0100] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): extract_store_data> on 2024-01-18 18:28:09.904779+00:00
+[2024-01-18T19:33:54.846+0100] {standard_task_runner.py:60} INFO - Started process 36304 to run task
+[2024-01-18T19:33:54.866+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'big_data_project_dag', 'extract_store_data', 'manual__2024-01-18T18:28:09.904779+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/CoinMarketCap.py', '--cfg-path', '/tmp/tmpe6ducrjc']
+[2024-01-18T19:33:54.942+0100] {standard_task_runner.py:88} INFO - Job 74: Subtask extract_store_data
+[2024-01-18T19:33:55.077+0100] {task_command.py:423} INFO - Running <TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:28:09.904779+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-18T19:33:55.313+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='jules' AIRFLOW_CTX_DAG_ID='big_data_project_dag' AIRFLOW_CTX_TASK_ID='extract_store_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-18T18:28:09.904779+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-18T18:28:09.904779+00:00'
+[2024-01-18T19:33:55.317+0100] {logging_mixin.py:188} INFO - Step 1: Extracting data from CoinMarketCap API...
+[2024-01-18T19:33:55.898+0100] {logging_mixin.py:188} INFO - Step 2: API response received successfully.
+[2024-01-18T19:33:55.898+0100] {logging_mixin.py:188} INFO - Step 3: Saving data locally in file: crypto_data_24-01-18-19-33-55.json
+[2024-01-18T19:33:58.935+0100] {_metadata.py:139} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2024-01-18T19:33:59.021+0100] {_metadata.py:139} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 113] No route to host
+[2024-01-18T19:34:02.026+0100] {_metadata.py:139} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2024-01-18T19:34:02.027+0100] {_default.py:338} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2024-01-18T19:34:02.027+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/dags/CoinMarketCap.py", line 67, in extract_and_store_data
+    client = storage.Client()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/storage/client.py", line 172, in __init__
+    super(Client, self).__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_default.py", line 691, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2024-01-18T19:34:02.087+0100] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=big_data_project_dag, task_id=extract_store_data, execution_date=20240118T182809, start_date=20240118T183354, end_date=20240118T183402
+[2024-01-18T19:34:02.215+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 74 for task extract_store_data (Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.; 36304)
+[2024-01-18T19:34:02.301+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-18T19:34:02.336+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

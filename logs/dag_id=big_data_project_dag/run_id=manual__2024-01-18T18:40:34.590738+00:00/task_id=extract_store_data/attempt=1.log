@@ -1,0 +1,17 @@
+[2024-01-18T19:40:46.956+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:40:34.590738+00:00 [queued]>
+[2024-01-18T19:40:46.970+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:40:34.590738+00:00 [queued]>
+[2024-01-18T19:40:46.970+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-01-18T19:40:47.079+0100] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): extract_store_data> on 2024-01-18 18:40:34.590738+00:00
+[2024-01-18T19:40:47.092+0100] {standard_task_runner.py:60} INFO - Started process 41171 to run task
+[2024-01-18T19:40:47.098+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'big_data_project_dag', 'extract_store_data', 'manual__2024-01-18T18:40:34.590738+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/CoinMarketCap.py', '--cfg-path', '/tmp/tmpa60sapix']
+[2024-01-18T19:40:47.106+0100] {standard_task_runner.py:88} INFO - Job 78: Subtask extract_store_data
+[2024-01-18T19:40:47.302+0100] {task_command.py:423} INFO - Running <TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:40:34.590738+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-18T19:40:47.588+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='jules' AIRFLOW_CTX_DAG_ID='big_data_project_dag' AIRFLOW_CTX_TASK_ID='extract_store_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-18T18:40:34.590738+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-18T18:40:34.590738+00:00'
+[2024-01-18T19:40:47.592+0100] {logging_mixin.py:188} INFO - Step 1: Extracting data from CoinMarketCap API...
+[2024-01-18T19:40:48.206+0100] {logging_mixin.py:188} INFO - Step 2: API response received successfully.
+[2024-01-18T19:40:48.206+0100] {logging_mixin.py:188} INFO - Step 3: Saving data locally in file: crypto_data_24-01-18-19-40-48.json
+[2024-01-18T19:40:56.757+0100] {logging_mixin.py:188} INFO - Step 4: Data has been stored on Google Cloud Storage in gs://jules-bucket-storage/big_data_projet/raw/coinmarketcap/24-01-18-19-40-48/CryptoList_24-01-18-19-40-48.json
+[2024-01-18T19:40:56.760+0100] {python.py:201} INFO - Done. Returned value was: big_data_projet/raw/coinmarketcap/24-01-18-19-40-48/CryptoList_24-01-18-19-40-48.json
+[2024-01-18T19:40:56.976+0100] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=big_data_project_dag, task_id=extract_store_data, execution_date=20240118T184034, start_date=20240118T184046, end_date=20240118T184056
+[2024-01-18T19:40:57.258+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-18T19:40:57.311+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

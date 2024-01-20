@@ -1,0 +1,35 @@
+[2024-01-18T19:36:35.580+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:36:23.761995+00:00 [queued]>
+[2024-01-18T19:36:35.590+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:36:23.761995+00:00 [queued]>
+[2024-01-18T19:36:35.590+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-01-18T19:36:35.843+0100] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): extract_store_data> on 2024-01-18 18:36:23.761995+00:00
+[2024-01-18T19:36:35.868+0100] {standard_task_runner.py:60} INFO - Started process 39039 to run task
+[2024-01-18T19:36:35.944+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'big_data_project_dag', 'extract_store_data', 'manual__2024-01-18T18:36:23.761995+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/CoinMarketCap.py', '--cfg-path', '/tmp/tmpv2d42tqb']
+[2024-01-18T19:36:35.978+0100] {standard_task_runner.py:88} INFO - Job 77: Subtask extract_store_data
+[2024-01-18T19:36:36.234+0100] {task_command.py:423} INFO - Running <TaskInstance: big_data_project_dag.extract_store_data manual__2024-01-18T18:36:23.761995+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-18T19:36:36.870+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='jules' AIRFLOW_CTX_DAG_ID='big_data_project_dag' AIRFLOW_CTX_TASK_ID='extract_store_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-18T18:36:23.761995+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-18T18:36:23.761995+00:00'
+[2024-01-18T19:36:36.888+0100] {logging_mixin.py:188} INFO - Step 1: Extracting data from CoinMarketCap API...
+[2024-01-18T19:36:37.847+0100] {logging_mixin.py:188} INFO - Step 2: API response received successfully.
+[2024-01-18T19:36:37.848+0100] {logging_mixin.py:188} INFO - Step 3: Saving data locally in file: crypto_data_24-01-18-19-36-37.json
+[2024-01-18T19:36:37.875+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_default.py:76 UserWarning: Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a "quota exceeded" or "API not enabled" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds.
+[2024-01-18T19:36:41.153+0100] {_default.py:683} WARNING - No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2024-01-18T19:36:41.155+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/dags/CoinMarketCap.py", line 67, in extract_and_store_data
+    client = storage.Client()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/storage/client.py", line 172, in __init__
+    super(Client, self).__init__(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/cloud/client/__init__.py", line 271, in __init__
+    raise EnvironmentError(
+OSError: Project was not passed and could not be determined from the environment.
+[2024-01-18T19:36:41.211+0100] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=big_data_project_dag, task_id=extract_store_data, execution_date=20240118T183623, start_date=20240118T183635, end_date=20240118T183641
+[2024-01-18T19:36:41.313+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 77 for task extract_store_data (Project was not passed and could not be determined from the environment.; 39039)
+[2024-01-18T19:36:41.365+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-18T19:36:41.480+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
