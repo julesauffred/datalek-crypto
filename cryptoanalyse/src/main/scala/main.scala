@@ -4,6 +4,8 @@ package main.scala.main
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
+import java.time._
+
 
 /**
   * Usage: cryptoanalyse <mnm_file_dataset>
@@ -12,7 +14,6 @@ object cryptoanalysejob {
   def main(args: Array[String]) {
     val spark = SparkSession
       .builder
-      
       .appName("cryptoanalyse")
       .getOrCreate()
 
@@ -64,9 +65,20 @@ object cryptoanalysejob {
     )}
 
     // Affichez le DataFrame résultant
-    resultDF.show(false)
+    resultDF.show(1)
+
+    // Obtenez la date du jour au format "dd-MM-yyyy"
+    val currentDate = java.time.LocalDate.now().format(java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+
+    // Obtenez l'heure actuelle au format "HH"
+    val currentHour = java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HH"))
+
+ 
+
+    // Construisez le chemin complet avec la date et l'heure actuelles
+    val hdfsPath = s"hdfs://localhost:9000/home/hadoop/hdfs/namenode/mobula/formatted/$currentDate/$currentHour"
 
     // Écrivez le DataFrame au format Parquet dans le répertoire "formatted"
-    resultDF.write.mode("overwrite").parquet("/home/ubuntu/airflow/cryptoanalyse/dataset/formatted/19-01-2024/")
+    resultDF.write.mode("overwrite").parquet(hdfsPath)
   }
 }
