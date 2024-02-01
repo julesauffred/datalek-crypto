@@ -1,0 +1,56 @@
+[2024-02-01T17:06:02.950+0100] {processor.py:161} INFO - Started process (PID=43324) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:06:02.952+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:06:02.955+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:06:02.954+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:06:02.978+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:06:03.338+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:06:03.337+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:06:03.354+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:06:03.354+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:06:03.490+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.547 seconds
+[2024-02-01T17:07:33.038+0100] {processor.py:161} INFO - Started process (PID=43381) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:07:33.050+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:07:33.051+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:33.050+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:07:33.057+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:07:33.072+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:33.072+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:07:33.084+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:33.084+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:07:33.113+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.079 seconds
+[2024-02-01T17:08:26.009+0100] {processor.py:161} INFO - Started process (PID=43425) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:08:26.023+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:08:26.025+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:26.024+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:08:26.036+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:08:26.111+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:26.111+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:08:26.167+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:26.167+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:08:26.251+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.274 seconds
+[2024-02-01T17:09:58.152+0100] {processor.py:161} INFO - Started process (PID=43501) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:09:58.183+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:09:58.217+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:58.199+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:09:58.232+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:09:58.290+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:58.289+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:09:58.310+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:58.310+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:09:58.400+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.259 seconds
+[2024-02-01T17:11:29.580+0100] {processor.py:161} INFO - Started process (PID=43578) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:11:29.583+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:11:29.584+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:29.584+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:11:29.595+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:11:29.629+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:29.628+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:11:29.649+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:29.649+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:11:29.849+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.274 seconds
+[2024-02-01T17:12:19.993+0100] {processor.py:161} INFO - Started process (PID=43614) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:12:19.997+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:12:19.999+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:19.998+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:12:20.019+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:12:20.510+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:20.510+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:12:20.537+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:20.536+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:12:20.635+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.651 seconds
+[2024-02-01T17:13:25.915+0100] {processor.py:161} INFO - Started process (PID=43687) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:13:25.917+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:13:25.918+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:25.918+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:13:25.925+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:13:25.948+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:25.948+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:13:26.028+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:26.027+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:13:26.071+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.162 seconds
+[2024-02-01T17:14:21.556+0100] {processor.py:161} INFO - Started process (PID=43772) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:14:21.559+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-02-01T17:14:21.561+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:21.560+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:14:21.577+0100] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-02-01T17:14:21.621+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:21.621+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:14:21.644+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:21.644+0100] {dag.py:3820} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-02-01T17:14:21.687+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 0.136 seconds

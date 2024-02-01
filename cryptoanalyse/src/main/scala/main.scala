@@ -1,6 +1,7 @@
 
 package main.scala.main
 
+import org.elasticsearch.spark.sql._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
@@ -80,5 +81,6 @@ object cryptoanalysejob {
 
     // Écrivez le DataFrame au format Parquet dans le répertoire "formatted"
     resultDF.write.mode("overwrite").parquet(hdfsPath)
-  }
+
+   
 }

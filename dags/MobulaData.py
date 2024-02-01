@@ -76,7 +76,10 @@ def store_on_hdfs(**kwargs):
     data = ti.xcom_pull(task_ids='extract_data')
 
     current_timestamp = datetime.now().strftime("%H-%M-%S")
-    hdfs_path = f'/home/hadoop/hdfs/namenode/mobula/raw/CryptoList_{current_timestamp}.json'
+    current_hour = datetime.now().strftime("%H")
+    folder_date_format = datetime.now().strftime("%d-%m-%Y")
+
+    hdfs_path = f'/home/hadoop/hdfs/namenode/mobula/raw/{folder_date_format}/{current_hour}/CryptoList_{current_timestamp}.json'
 
     client = InsecureClient('http://localhost:9870', user='hadoop')  # Update with your HDFS configuration
     with client.write(hdfs_path, overwrite=True) as writer:
@@ -84,6 +87,32 @@ def store_on_hdfs(**kwargs):
 
     print(f"Step 4: Data has been stored on HDFS at {hdfs_path}")
 
+
+def run_spark_submit(**kwargs):
+    gcs_object_path = kwargs['ti'].xcom_pull(task_ids='store_on_gcs')
+
+    spark_submit_command = (
+        "spark-submit "
+        "--class main.scala.main.cryptoanalysejob "
+        "--packages org.elasticsearch:elasticsearch-spark-30_2.12:7.17.16 "
+        f"/home/ubuntu/airflow/cryptoanalyse/target/scala-2.12/cryptoanalyse_2.12-0.1.0-SNAPSHOT.jar "
+        f"{gcs_object_path}"
+    )
+
+    print("Step 5: Running spark-submit...")
+    print(spark_submit_command)
+
+    # Exécutez la commande spark-submit
+    import subprocess
+    subprocess.run(spark_submit_command, shell=True)
+
+# Créer la tâche pour exécuter spark-submit
+task_run_spark_submit = PythonOperator(
+    task_id='run_spark_submit',
+    python_callable=run_spark_submit,
+    provide_context=True,
+    dag=dag,
+)
 # Create tasks using PythonOperator
 task_extract_data = PythonOperator(
     task_id='extract_data',
@@ -106,5 +135,6 @@ task_store_on_hdfs = PythonOperator(
     dag=dag,
 )
 
-# Define the order of task execution in the DAG
-task_extract_data >> task_store_on_gcs >> task_store_on_hdfs
+
+# Définir l'ordre d'exécution des tâches dans le DAG
+task_extract_data >> task_store_on_gcs >> task_store_on_hdfs >> task_run_spark_submit

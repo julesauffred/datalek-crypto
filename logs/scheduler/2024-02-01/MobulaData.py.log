@@ -1,0 +1,105 @@
+[2024-02-01T16:57:40.261+0100] {processor.py:161} INFO - Started process (PID=42806) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:57:40.264+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T16:57:40.266+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:57:40.265+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:57:40.881+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:57:40.912+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:57:40.910+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T16:57:40.993+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:57:40.992+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-01-31T00:00:00+00:00, run_after=2024-02-01T00:00:00+00:00
+[2024-02-01T16:57:41.060+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.811 seconds
+[2024-02-01T16:59:16.712+0100] {processor.py:161} INFO - Started process (PID=42860) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:59:16.715+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T16:59:16.716+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:59:16.716+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:59:17.009+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T16:59:17.342+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:59:17.342+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T16:59:17.364+0100] {logging_mixin.py:188} INFO - [2024-02-01T16:59:17.364+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T16:59:17.402+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.696 seconds
+[2024-02-01T17:01:32.845+0100] {processor.py:161} INFO - Started process (PID=43060) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:01:32.849+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:01:32.851+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:01:32.850+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:01:34.474+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:01:34.666+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:01:34.664+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:01:34.876+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:01:34.875+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:01:35.108+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 2.273 seconds
+[2024-02-01T17:04:35.417+0100] {processor.py:161} INFO - Started process (PID=43114) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:04:35.428+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:04:35.442+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:04:35.440+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:04:37.388+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:04:37.848+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:04:37.847+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:04:37.988+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:04:37.988+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:04:38.168+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 2.760 seconds
+[2024-02-01T17:05:38.571+0100] {processor.py:161} INFO - Started process (PID=43288) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:05:38.582+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:05:38.589+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:38.589+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:05:39.480+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:05:39.538+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:39.537+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:05:39.649+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:39.648+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:05:39.756+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 1.191 seconds
+[2024-02-01T17:07:18.178+0100] {processor.py:161} INFO - Started process (PID=43369) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:07:18.193+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:07:18.194+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:18.194+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:07:18.425+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:07:18.548+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:18.547+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:07:18.560+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:18.560+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:07:18.609+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.436 seconds
+[2024-02-01T17:08:06.008+0100] {processor.py:161} INFO - Started process (PID=43412) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:06.033+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:08:06.035+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:06.034+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:06.894+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:06.927+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:06.926+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:08:06.975+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:06.975+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:08:07.158+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 1.155 seconds
+[2024-02-01T17:08:54.814+0100] {processor.py:161} INFO - Started process (PID=43448) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:54.820+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:08:54.822+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:54.821+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:55.478+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:08:55.524+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:55.523+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:08:55.578+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:55.578+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:08:55.682+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.872 seconds
+[2024-02-01T17:09:39.895+0100] {processor.py:161} INFO - Started process (PID=43488) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:09:39.932+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:09:39.933+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:39.933+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:09:40.608+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:09:40.632+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:40.631+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:09:40.701+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:40.701+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:09:40.781+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.944 seconds
+[2024-02-01T17:10:26.495+0100] {processor.py:161} INFO - Started process (PID=43523) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:10:26.507+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:10:26.508+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:26.508+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:10:26.775+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:10:26.799+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:26.797+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:10:26.833+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:26.833+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:10:26.877+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.385 seconds
+[2024-02-01T17:11:09.532+0100] {processor.py:161} INFO - Started process (PID=43565) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:11:09.541+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:11:09.544+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:09.543+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:11:10.247+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:11:10.268+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:10.267+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:11:10.297+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:10.296+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:11:10.340+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.817 seconds
+[2024-02-01T17:12:01.815+0100] {processor.py:161} INFO - Started process (PID=43601) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:01.826+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:12:01.827+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:01.827+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:03.092+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:03.111+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:03.110+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:12:03.135+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:03.135+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:12:03.165+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 1.355 seconds
+[2024-02-01T17:12:48.890+0100] {processor.py:161} INFO - Started process (PID=43639) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:48.893+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:12:48.895+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:48.894+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:49.037+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:12:49.061+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:49.060+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:12:49.086+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:49.085+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:12:49.136+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.252 seconds
+[2024-02-01T17:13:21.880+0100] {processor.py:161} INFO - Started process (PID=43683) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:13:21.883+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:13:21.885+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:21.884+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:13:22.020+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:13:22.036+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:22.036+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:13:22.056+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:22.056+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:13:22.168+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.292 seconds
+[2024-02-01T17:14:17.976+0100] {processor.py:161} INFO - Started process (PID=43769) to work on /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:14:17.978+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/MobulaData.py for tasks to queue
+[2024-02-01T17:14:17.979+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:17.978+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:14:18.094+0100] {processor.py:840} INFO - DAG(s) 'mobula_injest_data_dag' retrieved from /home/ubuntu/airflow/dags/MobulaData.py
+[2024-02-01T17:14:18.113+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:18.112+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:14:18.149+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:18.148+0100] {dag.py:3820} INFO - Setting next_dagrun for mobula_injest_data_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:14:18.207+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/MobulaData.py took 0.235 seconds

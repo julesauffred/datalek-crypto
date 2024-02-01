@@ -1,0 +1,77 @@
+[2024-02-01T17:05:41.132+0100] {processor.py:161} INFO - Started process (PID=43298) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:05:41.133+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:05:41.135+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:41.134+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:05:41.301+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:05:42.112+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:42.111+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:05:44.503+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:05:44.503+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:05:44.558+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 3.432 seconds
+[2024-02-01T17:07:19.717+0100] {processor.py:161} INFO - Started process (PID=43370) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:07:19.720+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:07:19.722+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:19.721+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:07:19.846+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:07:19.963+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:19.963+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:07:19.977+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:07:19.977+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:07:20.038+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.326 seconds
+[2024-02-01T17:08:08.421+0100] {processor.py:161} INFO - Started process (PID=43414) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:08.433+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:08:08.437+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:08.437+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:09.270+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:09.332+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:09.330+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:08:09.424+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:09.424+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:08:09.573+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 1.159 seconds
+[2024-02-01T17:08:56.931+0100] {processor.py:161} INFO - Started process (PID=43449) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:56.945+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:08:56.952+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:56.946+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:57.641+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:08:57.682+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:57.681+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:08:57.735+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:08:57.734+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:08:57.829+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.914 seconds
+[2024-02-01T17:09:42.028+0100] {processor.py:161} INFO - Started process (PID=43489) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:09:42.057+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:09:42.059+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:42.058+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:09:42.753+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:09:42.808+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:42.806+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:09:42.842+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:09:42.842+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:09:42.985+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.964 seconds
+[2024-02-01T17:10:27.568+0100] {processor.py:161} INFO - Started process (PID=43524) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:10:27.578+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:10:27.580+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:27.579+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:10:27.829+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:10:27.839+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:27.839+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:10:27.857+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:10:27.857+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:10:27.894+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.333 seconds
+[2024-02-01T17:11:11.621+0100] {processor.py:161} INFO - Started process (PID=43566) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:11:11.630+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:11:11.632+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:11.632+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:11:12.174+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:11:12.205+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:12.203+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:11:12.253+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:11:12.252+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:11:12.320+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.707 seconds
+[2024-02-01T17:12:04.414+0100] {processor.py:161} INFO - Started process (PID=43603) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:04.450+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:12:04.452+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:04.452+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:04.750+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:04.765+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:04.765+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:12:04.786+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:04.786+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:12:04.901+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.514 seconds
+[2024-02-01T17:12:50.251+0100] {processor.py:161} INFO - Started process (PID=43640) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:50.253+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:12:50.254+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:50.254+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:50.355+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:12:50.370+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:50.369+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:12:50.400+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:12:50.399+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:12:50.476+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.228 seconds
+[2024-02-01T17:13:23.268+0100] {processor.py:161} INFO - Started process (PID=43684) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:13:23.269+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:13:23.270+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:23.270+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:13:23.396+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:13:23.409+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:23.408+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:13:23.426+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:13:23.426+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:13:23.464+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.202 seconds
+[2024-02-01T17:14:19.328+0100] {processor.py:161} INFO - Started process (PID=43770) to work on /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:14:19.331+0100] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/CoinMarketCap.py for tasks to queue
+[2024-02-01T17:14:19.333+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:19.332+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:14:19.422+0100] {processor.py:840} INFO - DAG(s) 'big_data_project_dag' retrieved from /home/ubuntu/airflow/dags/CoinMarketCap.py
+[2024-02-01T17:14:19.435+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:19.435+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-02-01T17:14:19.452+0100] {logging_mixin.py:188} INFO - [2024-02-01T17:14:19.451+0100] {dag.py:3820} INFO - Setting next_dagrun for big_data_project_dag to 2024-02-01T00:00:00+00:00, run_after=2024-02-02T00:00:00+00:00
+[2024-02-01T17:14:19.492+0100] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/CoinMarketCap.py took 0.168 seconds
