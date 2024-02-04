@@ -1,0 +1,42 @@
+Architecture BI Cloud pour l'Industrialisation :
+
+    Collecte des données :
+        Utilisation d'AWS S3 pour stocker les fichiers fournis, tels que la population des villes, la liste des musées, etc.
+        Mise en place d'un flux d'ETL automatisé à l'aide d'AWS Glue pour extraire, transformer, et charger les données dans une base de données cloud, comme Amazon Redshift.
+        Planification des tâches ETL pour une exécution quotidienne afin de garantir la fraîcheur des données.
+
+    Stockage de données :
+        Configuration d'Amazon Redshift pour stocker les données de manière optimale pour les requêtes analytiques.
+        Création de tables dédiées pour la population, les musées, les monuments historiques, etc.
+
+    Traitement des données :
+        Utilisation d'Apache Spark pour traiter les données, effectuer des calculs complexes (par exemple, densité de musées par habitant) et générer les indicateurs nécessaires.
+        Stockage des résultats dans des tables spécifiques sur Amazon Redshift.
+
+    Visualisation :
+        Création de tableaux de bord interactifs avec Tableau Online, directement connecté à Amazon Redshift.
+        Programmation des rafraîchissements automatiques pour assurer une mise à jour quotidienne des visualisations.
+
+Architecture BI On-Premise pour l'Industrialisation :
+
+    Collecte des données :
+        Utilisation de Talend pour concevoir un processus ETL on-premise, intégré à l'environnement existant.
+        Chargement des données depuis les fichiers fournis vers une base de données SQL Server locale, avec une planification quotidienne des tâches ETL.
+
+    Stockage de données :
+        Configuration de la base de données SQL Server pour optimiser le stockage des données, en créant des tables spécifiques pour chaque type d'information (population, musées, etc.).
+
+    Traitement des données :
+        Utilisation d'Apache Flink pour le traitement en temps réel ou en batch, selon les besoins spécifiques du projet.
+        Définition des flux de traitement pour les indicateurs nécessaires à la génération du rapport quotidien.
+
+    Visualisation :
+        Développement de rapports avec Power BI Desktop connecté à la base de données SQL Server locale.
+        Publication des rapports sur Power BI Report Server pour permettre l'accès quotidien aux utilisateurs internes.
+
+Solutions du marché pour chaque élément de l'architecture :
+
+    Stockage Cloud : Amazon Redshift.
+    ETL : AWS Glue, Talend.
+    Traitement de données : Apache Spark, Apache Flink.
+    Visualisation : Tableau Online, Power BI Report Server.
