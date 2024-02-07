@@ -2,7 +2,7 @@ from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
 from airflow.operators.bash_operator import BashOperator
-
+pip install apache-airflow-providers-appache-spark
 
 airflow_owner = "julesauffred"  # Nom du propriétaire du projet (Ton nom)
 dag_name = "big_data_dag"  # Nom du DAG (exemple: datalake_dag)
